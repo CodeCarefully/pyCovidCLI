@@ -8,6 +8,5 @@ This is pretty much a silly fun project, somewhat based on my
 ### ToDo:
 
 * Make into a PIP Package?
-* Use argparse to handle things like url, caching, debug, output formats etc..
 * Handle fail cases better
 * Tests

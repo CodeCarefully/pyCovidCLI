@@ -138,3 +138,5 @@ dmypy.json
 cython_debug/
 .idea
 condaenv
+/requirements_conda.txt
+*.csv
