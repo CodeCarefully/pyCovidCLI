@@ -2,6 +2,7 @@
 COVID CLI getter
 
 This is everyone's little pet project during lockdown.
+Data on COVID-19 (coronavirus) by Our World in Data (https://github.com/owid/covid-19-data/tree/master/public/data)
 
 usage:
     pyCovidCLI -h | --help | --version | --licence
@@ -76,9 +77,10 @@ def clean_data(n):
 
 response=None
 
+
 if arguments["--cacheoff"] or \
-        not (os.path.isfile(arguments["--cachedir"])) \
-        or modification_date(arguments["--cachedir"]) < datetime.now() - timedelta(hours=12):
+        (not (os.path.isfile(arguments["--cachedir"])) \
+        or modification_date(arguments["--cachedir"]) < datetime.now() - timedelta(hours=5)):
     logger.debug("Fetching from URL")
     response = requests.request("GET", arguments["--URL"]).text
     if not arguments["--cacheoff"]:

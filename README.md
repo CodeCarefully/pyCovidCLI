@@ -5,6 +5,8 @@ and now I'm making one in python.
 This is pretty much a silly fun project, somewhat based on my 
 [earlier work](https://github.com/CodeCarefully/myCOVIDcli) 
 
+Data on COVID-19 (coronavirus) by Our World in Data (https://github.com/owid/covid-19-data/tree/master/public/data)
+
 ### ToDo:
 
 * Make into a PIP Package?
